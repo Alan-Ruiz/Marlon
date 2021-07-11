@@ -5,6 +5,7 @@ class CastingsController < ApplicationController
   end
 
   def show
+    @casting = Casting.find(params[:id])
   end
 
   def new
