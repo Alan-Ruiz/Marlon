@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resouces :users, only: [:show] do
-    resources :castings
+    resources :castings, only: [:show, :index, :new]
   end
 
 end
