@@ -1,6 +1,7 @@
 class CastingsController < ApplicationController
 
   def index
+    @castings = Casting.All
   end
 
   def show
