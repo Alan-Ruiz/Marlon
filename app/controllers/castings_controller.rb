@@ -21,6 +21,11 @@ class CastingsController < ApplicationController
     end
   end
 
+
+
+  def destroy
+  end
+
   private
 
   def set_casting
