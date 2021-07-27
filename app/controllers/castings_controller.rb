@@ -21,7 +21,8 @@ class CastingsController < ApplicationController
     end
   end
 
-
+  def edit
+  end
 
   def destroy
   end
