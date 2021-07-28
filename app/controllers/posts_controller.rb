@@ -10,9 +10,12 @@ class PostsController < ApplicationController
 
   private
 
-  def set_casting
-    @casting = Casting.find(params[:id])
+  def set_post
+    @post = Post.find(params[:id])
   end
 
+  def casting_params
+    params.require(:casting).permit(:title, :content, :city, :photo)
+  end
 
 end
