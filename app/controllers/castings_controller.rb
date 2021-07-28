@@ -34,6 +34,6 @@ class CastingsController < ApplicationController
   end
 
   def casting_params
-    params.require(:casting).permit(:title, :content, :city, :photo)
+    params.require(:casting).permit(:title, :content)
   end
 end
