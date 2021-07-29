@@ -14,8 +14,8 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
-  def casting_params
-    params.require(:casting).permit(:title, :content, :city, :photo)
+  def post_params
+    params.require(:post).permit(:title, :content)
   end
 
 end
