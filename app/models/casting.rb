@@ -1,3 +1,3 @@
 class Casting < ApplicationRecord
-  has_one_attached :images
+  has_one_attached :image
 end
