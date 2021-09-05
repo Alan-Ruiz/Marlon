@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'dashboard', to: 'pages#dashboard'
 
- resources :castings, only: [:show, :index, :new]
+ resources :castings, only: [:show, :index, :new, :create]
 
 
   resources :posts, only: [:show, :create, :index]
