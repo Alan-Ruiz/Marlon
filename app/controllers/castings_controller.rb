@@ -1,8 +1,8 @@
 class CastingsController < ApplicationController
-  before_action :set_casting, only: [:show]
+  before_action :set_casting, only: [:show, :create, :edit, :destroy]
 
   def index
-    @castings = Casting.All
+    @castings = Casting.all
   end
 
   def show

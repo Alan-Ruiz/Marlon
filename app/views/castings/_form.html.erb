@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row d-flex justify-content-center my-5 py-5 login-box">
+    <div class="col-md-8 border rounded py-4 px-5 shadow">
+      <h5 class="text-center mb-4">List Casting</h2>
+      <%= simple_form_for @casting do |f| %>
+      <%= f.input :title%>
+      <%= f.input :content %>
+      <%= f.input :city %>
+      <%= f.input :image, input_html: { class: 'hidden'} %>
+      <%= image_tag "", width: 300, class: "show", id: "photo-preview" %>
+      <%= f.submit "Post Casting", class: "btn btn-primary btn-block" %>
+      <% end %>
+    </div>
+  </div>
+</div>
