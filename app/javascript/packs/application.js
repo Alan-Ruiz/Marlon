@@ -8,6 +8,8 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap';
+//= require thredded
+require('thredded_imports.js');
 
 Rails.start()
 Turbolinks.start()
