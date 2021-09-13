@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
 
   resources :posts, only: [:show, :create, :index]
+
+
+  mount Thredded::Engine => '/forum'
+
 end
