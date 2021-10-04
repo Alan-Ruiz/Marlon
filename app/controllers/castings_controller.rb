@@ -1,4 +1,5 @@
 class CastingsController < ApplicationController
+  skip_before_action :authenticate_user!
   before_action :set_casting, only: [:show, :create, :edit, :destroy]
 
   def index
